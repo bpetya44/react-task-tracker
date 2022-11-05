@@ -45,7 +45,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 250vh 100vh;
-
+  color: white;
   
 }
 
@@ -55,7 +55,7 @@ body {
   overflow: auto;
   min-height: 300px;
   border: 1px solid steelblue;
-  padding: 1px;
+  padding: 10px;
   border-radius: 5px;
   background-color: #313133a4;
 }
