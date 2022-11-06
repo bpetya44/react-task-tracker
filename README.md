@@ -30,4 +30,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![](src/imgs/task-tarcker-1.gif)
+![](https://github.com/bpetya44/react-task-tracker/blob/main/src/imgs/task-tracker-1.gif)
