@@ -1,30 +1,29 @@
-import PropTypes from 'prop-types'
-import Button from './Button'
+import PropTypes from "prop-types";
+import Button from "./Button";
 
-const Header = ({ title }) => {
-    const onClick = () =>{
-        console.log('click');
-    }
-
+const Header = ({ title, onAdd, showAdd }) => {
   return (
-    <header className='header'>
-       <h1>{title}</h1> 
-       <Button color='green' text='add' onClick={onClick}/>
+    <header className="header">
+      <h1>{title}</h1>
+      <Button 
+        color={showAdd ? 'red' : 'green'} 
+        text={showAdd ? 'Close' : 'Add'} 
+        onClick={onAdd} 
+
+      />
     </header>
-  )
-}
+  );
+};
 
 //Default Props
 Header.defaultProps = {
-    title: 'Task Tracker',
-
-}
+  title: "Task Tracker",
+};
 
 //PropTypes
 Header.propTypes = {
-    title: PropTypes.string.isRequired,
-
-}
+  title: PropTypes.string.isRequired,
+};
 
 //inline Styling
 // const headingStyling ={
@@ -32,4 +31,4 @@ Header.propTypes = {
 //     backgroundColor: 'black',
 // }
 
-export default Header
+export default Header;
